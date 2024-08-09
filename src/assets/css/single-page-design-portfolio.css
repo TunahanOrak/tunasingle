@@ -1,0 +1,516 @@
+@font-face {
+  font-family: plusjakartabold;
+  src: url('../fonts/PlusJakartaSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: plus-jakarta-md;
+  src: url('../fonts/PlusJakartaSans-Medium.ttf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --primary-color: #030303;
+  --primary-text-color: #7A746E;
+  --secondary-color: #FFF7F0;
+  --Illustrations-color: #EB7565;
+  --Graphic-Design-color: #755cde;
+  --UI-UX-color: #f6a560;
+  --Apps-color: #F39E9E;
+  --Photography-color: #61C4B7;
+  --motion-color: #552049;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: plusjakartabold;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 70.56px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50.4px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40.32px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30.24px;
+}
+a {
+  font-family: plus-jakarta-md;
+}
+p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  font-family: plus-jakarta-md;
+  color: var(--primary-text-color);
+}
+
+
+body {
+  background-color: var(--secondary-color);
+}
+
+.header {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.header a {
+  border-radius: 30px;
+  padding: 14px 45px;
+  background-color: black;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.header a:hover {
+  background-color: var(--Graphic-Design-color);
+}
+
+.heading {
+  width: 752px;
+  margin: 66px auto;
+  text-align: center;
+}
+
+.heading h1 {
+  margin-bottom: 23px;
+}
+
+.nav {
+  width: 1110px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "graphic uıux apps photography"
+    "graphic ıllustrations ıllustrations motion"
+  ;
+  gap: 24px;
+  margin-bottom: 136px;
+}
+
+.graphic {
+  grid-area: graphic;
+  width: 354px;
+  background-image: url('../img/graphic-design.svg');
+  background-repeat: no-repeat;
+  background-position: top 24px right 24px;
+  background-color: var(--Graphic-Design-color);
+  border-radius: 10px;
+}
+
+.graphic h4 {
+  color: white;
+  padding: 310px 120px 24px 24px;
+}
+
+.uı-ux {
+  grid-area: uıux;
+  width: 164px;
+  background-image: url('../img/uıux.svg');
+  background-repeat: no-repeat;
+  background-position: top 24px right 24px;
+  background-color: var(--UI-UX-color);
+  border-radius: 10px;
+}
+
+.uı-ux h4 {
+  color: white;
+  padding: 128px 58px 24px 24px;
+}
+
+.apps {
+  grid-area: apps;
+  width: 164px;
+  background-image: url('../img/apps.svg');
+  background-repeat: no-repeat;
+  background-position: top 24px right 24px;
+  background-color: var(--Apps-color);
+  border-radius: 10px;
+}
+
+.apps h4 {
+  color: white;
+  padding: 128px 5px 24px 5px;
+}
+
+.photography {
+  grid-area: photography;
+  width: 354px;
+  background-image: url('../img/photography.svg');
+  background-repeat: no-repeat;
+  background-position: top 24px right 24px;
+  background-color: var(--Photography-color);
+  border-radius: 10px;
+}
+
+.photography h4 {
+  color: white;
+  padding: 128px 148px 24px 24px;
+}
+
+.ıllustrations {
+  grid-area: ıllustrations;
+  width: 354px;
+  background-image: url('../img/illustrations.svg');
+  background-repeat: no-repeat;
+  background-position: top 24px right 24px;
+  background-color: var(--Illustrations-color);
+  border-radius: 10px;
+}
+
+.ıllustrations h4 {
+  color: white;
+  padding: 104px 150px 24px 24px;
+}
+
+.motion {
+  grid-area: motion;
+  width: 354px;
+  background-image: url('../img/motion.svg');
+  background-repeat: no-repeat;
+  background-position: top 24px right 24px;
+  background-color: var(--motion-color);
+  border-radius: 10px;
+}
+
+.motion h4 {
+  color: white;
+  padding: 104px 103px 24px 24px;
+}
+
+.about {
+  width: 1110px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 125px;
+  margin-bottom: 88px;
+}
+
+.about h2 {
+  margin-bottom: 34px;
+}
+
+.about p {
+  margin-bottom: 32px;
+}
+
+.about a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  font-family: plus-jakarta-md;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--Illustrations-color);
+  padding: 14px 45px;
+  border-radius: 30px;
+}
+
+.about a:hover {
+  color: var(--secondary-color);
+  background-color: var(--UI-UX-color);
+}
+.rezervation {
+  margin-bottom: 56px;
+  width: 1110px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 182px;
+  padding: 81px 65px;
+  border-radius: 10px;
+}
+
+.rezervation-text {
+  width: 540px;
+}
+
+.rezervation-text h2 {
+  margin-bottom: 25px;
+}
+
+.rezervation-btn a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  font-family: plus-jakarta-md;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--Illustrations-color);
+  padding: 14px 45px;
+  border-radius: 30px;
+}
+
+.rezervation-btn a:hover {
+  color: var(--secondary-color);
+  background-color: var(--UI-UX-color);
+}
+
+.footer {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+}
+
+.footer a {
+  border-radius: 30px;
+  padding: 14px 45px;
+  background-color: black;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  background-color: var(--Graphic-Design-color);
+}
+
+@media (width <=768px) {
+  .header,.footer {
+    width: 689px;
+  }
+  .heading {
+    width: 690px;
+  }
+  .heading h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 55.44px;
+  }
+
+  .nav {
+    width: 690px;
+    display: grid;  
+    grid-template-areas:
+      "graphic graphic uıux apps"
+      "graphic graphic ıllustrations ıllustrations"
+      "photography photography motion motion"
+    ;
+    margin-bottom: 136px;
+  }
+
+  .uı-ux,.apps {
+    width: 155px;
+  }
+  .photography,.ıllustrations,.motion,.graphic {
+    width: 333px;
+  }
+  .ıllustrations h4 {
+    width: 340px;
+  }
+  .apps h4 {
+    font-size: 23px;
+  }
+
+  .about {
+    width: 772px;
+    gap: 69px;
+    position: relative;
+    left: -44px;
+  }
+
+  .about-text {
+    width: 339px;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.32px;
+  }
+
+  .rezervation {
+    margin-bottom: 56px;
+    width: 690px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-areas: "rzrtxt"
+      "rzrbtn";
+    justify-items: center;
+    gap: 26px;
+    padding: 56px 74px 64px;
+    border-radius: 10px;
+  }
+
+  .rezervation-text {
+    grid-area: rzrtxt;
+    text-align: center;
+  }
+
+  .rezervation-btn {
+    grid-area: rzrbtn;
+  }
+}
+
+@media (width < 375px) {
+  .header {
+    width: 343px;
+  }
+  .heading {
+    width: 343px;
+  }
+
+  .heading h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45.36px;
+  }
+
+  .nav {
+    width: 343px;
+    display: grid;
+    grid-template-areas:
+      "graphic graphic"
+      "uıux apps"
+      "ıllustrations ıllustrations"
+      "photography photography"
+      " motion motion"
+    ;
+    margin-bottom: 136px;
+  }
+  .uı-ux,.apps {
+    width: 159px;
+  }
+  .photography,.ıllustrations,.motion,.graphic {
+    width: 343px;
+  }
+  .ıllustrations h4 {
+    width: 340px;
+  }
+  .apps h4 {
+    font-size: 23px;
+  }
+
+  .about {
+    width: 343px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "aboutimg"
+      "abouttext";
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 88px;
+    left: 0;
+  }
+
+  .about img {
+    grid-area: aboutimg;
+  }
+
+  .about-text {
+    grid-area: abouttext;
+  }
+
+  .rezervation {
+    margin-bottom: 56px;
+    width: 343px;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-areas: "rzrtxt"
+      "rzrbtn";
+    justify-items: center;
+    gap: 26px;
+    padding: 48px 24px;
+    border-radius: 10px;
+  }
+  .rezervation-text {
+    width: 295px;
+  }
+  .rezervation-text h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32.76px;
+    text-align: center;
+  }
+
+  .rezervation-text p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+  }
+  
+  .footer {
+    width: 343px;
+  }
+}
